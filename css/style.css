@@ -287,7 +287,7 @@ header {
   background: var(--clr-dark); /* If Image Doesn't Appear*/
   color: var(--clr-light);
   background-image: url(../img/services-bg.jpg);
-  /* background-blend-mode: multiply; /*Darken Bacground */
+  background-blend-mode: multiply; /*Darken Bacground */
   background-size: cover;
   text-align: center;
 }
