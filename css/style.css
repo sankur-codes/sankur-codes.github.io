@@ -187,7 +187,7 @@ header {
   cursor: pointer;
   position: absolute;
   right: 1em;
-  top: 1em;
+  top: 4.5em;
   z-index: 1000;
 }
 
@@ -201,6 +201,7 @@ header {
 
 .nav-open .hamburger {
   transform: rotate(.625turn);
+  background: var(--clr-accent);
 }
 
 .nav-open .hamburger::after {
@@ -209,10 +210,11 @@ header {
 
 .nav-open .hamburger::before {
   transform: rotate(90deg) translateX(-6px);
+  background: var(--clr-accent);
 }
 
 .hamburger, .hamburger::before, .hamburger::after {
-  background: var(--clr-accent);
+  background: var(--clr-dark);
   width: 2em;
   height: 3px;
   border-radius: 1em;
@@ -236,7 +238,13 @@ header {
 .hamburger::before { top: 6px;}
 
 .logo {
-  max-width: 100px;
+  max-width: 200px;
+  position: relative;
+  display: block;
+  background: transparent;
+  border: 0;
+  left: 1em;
+  top: 1em;
 }
 
 /* Intro Section */
