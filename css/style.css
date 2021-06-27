@@ -74,10 +74,14 @@ img {
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: transform 200ms ease-in-out;
+  text-align: center;
+  border-radius: 6px;
+  border: 2px solid var(--clr-accent)
 }
 
 .btn:hover {
   transform: scale(1.1);
+  background: var(--clr-light);
 }
 
 /* Typography */
@@ -151,8 +155,7 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 100;
-
+  z-index: 5;
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 
@@ -188,7 +191,7 @@ header {
   position: absolute;
   right: 1em;
   top: 4.5em;
-  z-index: 1000;
+  z-index: 6;
 }
 
 .nav-open .nav {
@@ -247,6 +250,26 @@ header {
   top: 1em;
 }
 
+/* ScrollUp Button */
+.scrollUp {
+  position: fixed;
+  outline: auto;
+  text-align: center;
+  bottom: 30px;
+  right: 10px;
+  color: var(--clr-dark);
+  height: 40px;
+  width: 35px;
+  background: var(--clr-accent);
+  line-height: 45px;
+  z-index: 4;
+  font-size: var(--fs-h3);
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all .3s ease;
+}
+
 /* Intro Section */
 
 .intro {
@@ -301,7 +324,7 @@ header {
 }
 
 .section__title--services {
-  color: var(--clr-accent);
+  color: var(--clr-light);
   position: relative;
 
 }
@@ -322,7 +345,35 @@ header {
 
 .service {
   max-width: 500px;
-  margin: 0 auto;
+  margin: .5em auto;
+  background: var(--clr-dark);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  padding: 0 1em .5em 1em;
+}
+
+.service:hover {
+  background: var(--clr-accent);
+}
+
+.service__content {
+  transition: all 0.3s ease;
+}
+
+.service:hover .service__content {
+  transform: scale(1.05);
+}
+
+.service__icon {
+  font-size: var(--fs-h2);
+  margin: .5em auto .5em;
+  color: var(--clr-accent);
+  transition: color 0.3s ease-in-out;
+}
+
+.service:hover .service__icon {
+  transform: scale(1.1);
+  color: var(--clr-light);
 }
 
 @media (min-width: 900px) {
@@ -377,7 +428,15 @@ header {
     position: relative;
     z-index: 2;
   }
+
+  .about-me__CV {
+    width: fit-content;
+  }
 }
+
+.about-me__CV {
+    margin-top: 2em;
+  }
 
 /* My Work */
 

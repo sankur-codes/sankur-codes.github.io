@@ -36,6 +36,10 @@
       </nav>
     </header>
 
+    <div class="scrollUp" id="ToTop" onclick="topFunction()">
+      <i class="scrollUp__icon fa fa-angle-up"></i>
+    </div>
+
     <!-- Introduction -->
     <section class="intro" id="home">
       <h1 class="section__title section__title--intro">
@@ -51,27 +55,36 @@
       <h2 class="section__title section__title--services">What I Do</h2>
       <div class="services">
         <div class="service">
-          <h3>Scripting & Automations</h3>
-          <p>Implementing multiple autpmations mainly in
-            python (shell scripting) to ensure end-to-end
-            integration and working of devops tools.
-          </p>
+          <div class="service__content">
+            <i class="service__icon fas fa-file-code"></i>
+            <h3>Scripting</h3>
+            <p>Implementing multiple autpmations mainly in
+              python (shell scripting) to ensure end-to-end
+              integration and working of devops tools.
+            </p>
+          </div>
         </div> <!-- / service-->
 
         <div class="service">
-          <h3>CICD</h3>
-          <p>Working on build and deployment pipelines 
-            using GoCD, Terraform, Nomad, JIRA and AWS 
-            services like EC2, ECS, Lambda and S3.
-          </p>
+          <div class="service__content">
+            <i class="service__icon fas fa-sitemap"></i>
+            <h3>CICD</h3>
+            <p>Working on build and deployment pipelines 
+              using GoCD, Terraform, Nomad, JIRA and AWS 
+              services like EC2, ECS, Lambda and S3.
+            </p>
+          </div>
         </div> <!-- / service-->
 
         <div class="service">
-          <h3>Hobby Projects</h3>
-          <p>Learn various technologies & languages to
-            create projects like cli(s), games, websites, 
-            mobile applications and ML based models.
-          </p>
+          <div class="service__content">
+            <i class="service__icon fa fa-laptop-code"></i>
+            <h3>Hobby Projects</h3>
+            <p>Learn various technologies & languages to
+              create projects like cli(s), games, websites, 
+              mobile applications and ML based models.
+            </p>
+          </div>
         </div> <!-- / service-->
       </div> <!-- / services-->
 
@@ -102,6 +115,7 @@
       </div>
 
       <img src="img/about.jpg" alt="Me on a mountain rock" class="about-me__img">
+      <a href="#" class="btn about-me__CV">Download CV</a>
     </section>
 
     <section class="my-work" id="work">
