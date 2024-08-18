@@ -15,7 +15,7 @@ navLinks.forEach(link => {
 
 // typing animation 
 var typed = new Typed(".section__subtitle--about--Profiles", {
-  strings: ["Developer", "Learner", "DevOps Engineer", "Researcher", "Hiker"],
+  strings: ["Developer", "Learner", "DevOps Engineer" , "Site Reliability Engineer", "Researcher", "Hiker", "Open Source Contributor"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true
