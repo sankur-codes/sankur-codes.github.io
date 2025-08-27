@@ -15,20 +15,20 @@ navLinks.forEach(link => {
 
 // typing animation 
 var typed = new Typed(".section__subtitle--about--Profiles", {
-  strings: ["Developer", "Learner", "DevOps Engineer" , "Site Reliability Engineer", "Researcher", "Hiker", "Open Source Contributor"],
+  strings: ["Senior Site Reliability Engineer", "Cloud Infrastructure Expert", "DevOps Engineer", "Open Source Contributor", "Technical Leader", "System Architect", "Red Hat Engineer"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true
 })
 
-// slide up script 
+// modern slide up script 
 
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.opacity = 1;
+    mybutton.classList.add('show');
   } else {
-    mybutton.style.opacity = 0;
+    mybutton.classList.remove('show');
   }
 }
 function topFunction() {
