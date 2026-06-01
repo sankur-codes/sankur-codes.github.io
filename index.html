@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-    <title>sankur-codes</title>
+    <title>Ankur Singh | Senior SRE at Red Hat</title>
     <link rel="icon" href="img/logo.png" type="image/icon type">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ankur Singh — Senior Site Reliability Engineer at Red Hat. Cloud infrastructure, Kubernetes, DevOps, open source contributor, and conference speaker.">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha512-auFYU/67J4exjspDmd+Jbt7f4oqE26GbpY2VJZaBgWsLll1NwQ+NPiU2HehCZjBqjlr0T8/NS0SWPwkU2MURKw==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
 
-    <!-- typing animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
-    <link rel="stylesheet" href="css/style.css"> <!-- My CSS-->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="img/mylogo.png" alt="">
+        <img src="img/mylogo.png" alt="Ankur Singh">
       </div>
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
@@ -31,9 +29,12 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-          <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">What I Do</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#speaking" class="nav__link">Speaking</a></li>
+          <li class="nav__item"><a href="#opensource" class="nav__link">Open Source</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -42,158 +43,284 @@
       <i class="scrollUp__icon fa fa-angle-up"></i>
     </div>
 
-    <!-- Introduction -->
+    <!-- Hero -->
     <section class="intro" id="home">
       <div class="intro__content">
         <h1 class="section__title section__title--intro">
           Hi, I am <strong>Ankur Singh</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">Tech Enthusiast</p>
-        <img src="img/myphoto.jpeg" alt="a pic of me" class="intro__img">
+        <p class="section__subtitle section__subtitle--intro">
+          <span class="typed-roles"></span>
+        </p>
+        <p class="intro__tagline">
+          Senior Site Reliability Engineer at Red Hat, building resilient
+          cloud infrastructure at scale. Speaker, open source contributor,
+          and community advocate.
+        </p>
+        <div class="intro__cta">
+          <a href="#work" class="btn">View My Work</a>
+          <a href="Ankur_Profile.pdf" download="Ankur_Singh_Resume" class="btn btn--outline">Download Resume</a>
+        </div>
+        <img src="img/myphoto.jpeg" alt="Ankur Singh" class="intro__img">
       </div>
     </section>
 
-
-    <!-- My Services -->
+    <!-- What I Do -->
     <section class="my-services" id="services">
       <h2 class="section__title section__title--services">What I Do</h2>
       <div class="services">
         <div class="service">
           <div class="service__content">
-            <i class="service__icon fa fa-laptop-code"></i>
+            <i class="service__icon fa-solid fa-cloud"></i>
             <h3>DevOps Engineering</h3>
-            <p>Designing cloud-native systems and architectures, building robust 
-              CI/CD pipelines, and implementing automated deployment strategies 
+            <p>Designing cloud-native systems and architectures, building robust
+              CI/CD pipelines, and implementing automated deployment strategies
               for scalable, containerized applications.
             </p>
           </div>
-        </div> <!-- / service-->
+        </div>
 
         <div class="service">
           <div class="service__content">
-            <i class="service__icon fas fa-file-code"></i>
+            <i class="service__icon fa-solid fa-server"></i>
             <h3>Site Reliability Engineering</h3>
-            <p>Developing and maintaining distributed managed services on cloud platforms, 
-              implementing comprehensive monitoring and alerting systems, and leading 
+            <p>Developing and maintaining distributed managed services on cloud platforms,
+              implementing comprehensive monitoring and alerting systems, and leading
               incident response with proactive reliability engineering practices.
             </p>
           </div>
-        </div> <!-- / service-->
+        </div>
 
         <div class="service">
           <div class="service__content">
-            <i class="service__icon fas fa-sitemap"></i>
+            <i class="service__icon fa-solid fa-people-group"></i>
             <h3>Technical Leadership</h3>
-            <p>Mentoring engineering teams, driving technical strategy decisions, 
-              contributing to open-source projects, and sharing expertise through 
+            <p>Mentoring engineering teams, driving technical strategy decisions,
+              contributing to open-source projects, and sharing expertise through
               technical conferences and community workshops.
             </p>
           </div>
-        </div> <!-- / service-->
-      </div> <!-- / services-->
-
-      <!-- <a href="#work" class="btn">My Work</a> -->
-    </section> <!-- / My services-->
+        </div>
+      </div>
+    </section>
 
     <!-- About Me -->
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">Who I Am</h2>
-      <div class="section__subtitle section__subtitle--about">
-        <span class="section__subtitle--about--Profiles"></span>
-      </div>
+      <p class="section__subtitle section__subtitle--about">
+        Engineer · Speaker · Open Source Contributor
+      </p>
 
       <div class="about-me__body">
-        <p>As a Senior Site Reliability Engineer at Red Hat, I specialize in designing and maintaining 
-          large-scale, resilient cloud infrastructure systems. My passion for technology stems from its 
+        <p>As a Senior Site Reliability Engineer at Red Hat, I specialize in designing and maintaining
+          large-scale, resilient cloud infrastructure systems. My passion for technology stems from its
           transformative power to solve complex problems and drive innovation at enterprise scale.
         </p>
-        <p>I bring extensive expertise in cloud-native technologies, container orchestration with Kubernetes, 
-          infrastructure automation, and comprehensive monitoring solutions. My experience spans across 
-          building robust CI/CD pipelines, implementing observability practices, and ensuring high availability 
-          for mission-critical applications. I'm also an active contributor to open-source projects and 
-          enjoy sharing knowledge through technical workshops and community engagement.
+        <p>I bring extensive expertise in cloud-native technologies, container orchestration with Kubernetes,
+          infrastructure automation, and comprehensive monitoring solutions. My experience spans across
+          building robust CI/CD pipelines, implementing observability practices, and ensuring high availability
+          for mission-critical applications. I'm also an active contributor to open-source projects and
+          enjoy sharing knowledge through technical conferences and community engagement.
         </p>
       </div>
 
-      <img src="img/about.jpg" alt="Me on a mountain rock" class="about-me__img">
-      <a href="Ankur_DevOps_Resume.pdf" download="Ankur_DevOps_Resume" class="btn about-me__CV">Download CV</a>
+      <div class="about-me__stats">
+        <div class="stat">
+          <span class="stat__number">5+</span>
+          <span class="stat__label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">10+</span>
+          <span class="stat__label">Conference Talks</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">5+</span>
+          <span class="stat__label">OSS Projects</span>
+        </div>
+      </div>
+
+      <img src="img/about.jpg" alt="Ankur Singh" class="about-me__img">
+      <a href="Ankur_Profile.pdf" download="Ankur_Singh_Resume" class="btn about-me__CV">Download CV</a>
     </section>
 
+    <!-- Speaking & Conferences -->
+    <section class="speaking" id="speaking">
+      <h2 class="section__title section__title--speaking">Speaking & Conferences</h2>
+      <p class="section__subtitle section__subtitle--speaking">
+        Sharing knowledge at premier cloud-native and open source events
+      </p>
+      <div class="speaking__grid">
+        <div class="speaking__card">
+          <div class="speaking__icon">
+            <i class="fa-solid fa-microphone-lines"></i>
+          </div>
+          <h3>KubeCon + CloudNativeCon</h3>
+          <p class="speaking__org">CNCF</p>
+          <p class="speaking__desc">Presenting on Kubernetes reliability patterns, SRE practices, and cloud-native infrastructure at the flagship CNCF conference.</p>
+          <div class="speaking__tags">
+            <span class="speaking__tag">Kubernetes</span>
+            <span class="speaking__tag">Cloud Native</span>
+          </div>
+        </div>
+
+        <div class="speaking__card">
+          <div class="speaking__icon">
+            <i class="fa-solid fa-microphone-lines"></i>
+          </div>
+          <h3>Open Source Summit</h3>
+          <p class="speaking__org">Linux Foundation</p>
+          <p class="speaking__desc">Speaking about open source contributions, community building, and enterprise adoption of open source technologies.</p>
+          <div class="speaking__tags">
+            <span class="speaking__tag">Open Source</span>
+            <span class="speaking__tag">Linux</span>
+          </div>
+        </div>
+
+        <div class="speaking__card">
+          <div class="speaking__icon">
+            <i class="fa-solid fa-microphone-lines"></i>
+          </div>
+          <h3>DevConf</h3>
+          <p class="speaking__org">Red Hat / Fedora Community</p>
+          <p class="speaking__desc">Delivering talks on DevOps practices, container platforms, and site reliability engineering at the Red Hat community conference.</p>
+          <div class="speaking__tags">
+            <span class="speaking__tag">DevOps</span>
+            <span class="speaking__tag">Containers</span>
+          </div>
+        </div>
+
+        <div class="speaking__card">
+          <div class="speaking__icon">
+            <i class="fa-solid fa-microphone-lines"></i>
+          </div>
+          <h3>Kubernetes Community Days</h3>
+          <p class="speaking__org">CNCF Community</p>
+          <p class="speaking__desc">Engaging with regional Kubernetes communities through workshops and technical talks on cluster operations and observability.</p>
+          <div class="speaking__tags">
+            <span class="speaking__tag">KCD</span>
+            <span class="speaking__tag">Community</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Open Source -->
+    <section class="opensource" id="opensource">
+      <h2 class="section__title section__title--opensource">Open Source</h2>
+      <p class="section__subtitle section__subtitle--opensource">
+        Contributing to projects that power the cloud-native ecosystem
+      </p>
+      <div class="opensource__grid">
+        <div class="opensource__card">
+          <div class="opensource__card-header">
+            <i class="fa-brands fa-github"></i>
+            <span class="opensource__language">Go</span>
+          </div>
+          <h3>ARO-RP</h3>
+          <p>Azure Red Hat OpenShift Resource Provider. Contributing to the managed OpenShift service on Azure, including operator logic and infrastructure automation.</p>
+          <a href="https://github.com/sankur-codes/ARO-RP/" target="_blank" rel="noopener noreferrer" class="opensource__link">
+            View on GitHub <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="opensource__card">
+          <div class="opensource__card-header">
+            <i class="fa-brands fa-github"></i>
+            <span class="opensource__language">Go</span>
+          </div>
+          <h3>customDNS</h3>
+          <p>A custom DNS server implementation for learning and experimentation with DNS protocol internals and network programming fundamentals.</p>
+          <a href="https://github.com/sankur-codes/customDNS" target="_blank" rel="noopener noreferrer" class="opensource__link">
+            View on GitHub <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="opensource__card">
+          <div class="opensource__card-header">
+            <i class="fa-brands fa-github"></i>
+            <span class="opensource__language">YAML / K8s</span>
+          </div>
+          <h3>k8s-basic-project</h3>
+          <p>A comprehensive tutorial for setting up local Kubernetes environments, covering cluster bootstrapping, deployments, and essential configurations.</p>
+          <a href="https://github.com/sankur-codes/k8s-basic-project/" target="_blank" rel="noopener noreferrer" class="opensource__link">
+            View on GitHub <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
     <section class="my-work" id="work">
-      <h2 class="section__title section__title--work">My Work</h2>
-      <p class="section__subtitle section__subtitle--work"> A range of collection of my previous work</p>
+      <h2 class="section__title section__title--work">Projects</h2>
+      <p class="section__subtitle section__subtitle--work">A collection of projects and contributions</p>
       <div class="portfolio">
-        <!-- Work item 01 -->
         <div class="portfolio_wrap">
           <a href="https://alloftech.github.io/" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-            <img src="img/blog.png" alt="blog_website" class="portfolio__img">
+            <img src="img/blog.png" alt="Personal blog" class="portfolio__img">
             <h3 class="portfolio__desc">Personal Blogging Website</h3>
           </a>
         </div>
 
-        <!-- Work item 02 -->
         <div class="portfolio_wrap">
           <a href="https://github.com/sankur-codes/k8s-basic-project/" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-            <img src="img/k8s.png" alt="local-k8s" class="portfolio__img">
+            <img src="img/k8s.png" alt="Kubernetes setup" class="portfolio__img">
             <h3 class="portfolio__desc">Local K8s Setup Tutorial</h3>
           </a>
         </div>
 
-        <!-- Work item 03 -->
         <div class="portfolio_wrap">
           <a href="https://github.com/sankur-codes/ARO-RP/" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-            <img src="img/aro.png" alt="aro" class="portfolio__img">
+            <img src="img/aro.png" alt="ARO-RP" class="portfolio__img">
             <h3 class="portfolio__desc">ARO-RP Contributor</h3>
           </a>
         </div>
 
-        <!-- Work item 04 -->
         <div class="portfolio_wrap">
           <a href="https://drive.google.com/drive/folders/14L33YVkBbQNQ9qMCBa3vPN0wtc6tFJMC?usp=sharing" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-            <img src="img/teachingleadership.png" alt="session" class="portfolio__img">
+            <img src="img/teachingleadership.png" alt="Teaching sessions" class="portfolio__img">
             <h3 class="portfolio__desc">Teaching & Leading</h3>
           </a>
         </div>
 
-        <!-- Work item 05 -->
-        <!-- <div class="portfolio_wrap">
-          <a href="#" class="portfolio__item">
-            <img src="img/work5.jpg" alt="work5" class="portfolio__img">
-            <h3 class="portfolio__desc">Project 5</h3>
+        <div class="portfolio_wrap">
+          <a href="https://github.com/sankur-codes/customDNS" target="_blank" rel="noopener noreferrer" class="portfolio__item">
+            <div class="portfolio__placeholder">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3 class="portfolio__desc">Custom DNS Server</h3>
           </a>
-        </div> -->
-
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-      <a href="mailto:ankursingh1805@gmail.com" class="footer__link">hello@ankur.singh</a>
+    <footer class="footer" id="contact">
+      <a href="mailto:ankursingh1805@gmail.com" class="footer__link">ankursingh1805@gmail.com</a>
       <ul class="social-list">
         <li class="social-list__item">
-          <a class="social-list__link" href="https://in.linkedin.com/in/as786">
-            <i class="fab fa-linkedin"></i>
+          <a class="social-list__link" href="https://in.linkedin.com/in/as786" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://github.com/sankur-codes">
-            <i class="fab fa-github"></i>
+          <a class="social-list__link" href="https://github.com/sankur-codes" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://www.instagram.com/_singh__ankur_/">
-            <i class="fab fa-instagram"></i>
+          <a class="social-list__link" href="https://www.instagram.com/_singh__ankur_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://twitter.com">
-            <i class="fab fa-twitter"></i>
+          <a class="social-list__link" href="https://twitter.com/AnkurCodess" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
           </a>
         </li>
       </ul>
+      <p class="footer__copyright">&copy; 2026 Ankur Singh. Built with passion.</p>
     </footer>
 
     <script src="js/index.js"></script>
-
   </body>
 </html>

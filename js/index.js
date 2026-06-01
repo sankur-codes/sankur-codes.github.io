@@ -1,37 +1,83 @@
+// Mobile navigation toggle
 const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav__link')
-var mybutton = document.getElementById("ToTop");
+const navLinks = document.querySelectorAll('.nav__link');
 
 navToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-open');
-})
+});
 
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
     document.body.classList.remove('nav-open');
-  })
-  
+  });
 });
 
-// typing animation 
-var typed = new Typed(".section__subtitle--about--Profiles", {
-  strings: ["Senior Site Reliability Engineer", "Cloud Infrastructure Expert", "DevOps Engineer", "Open Source Contributor", "Technical Leader", "System Architect", "Red Hat Engineer"],
-  typeSpeed: 100,
-  backSpeed: 60,
+// Typed.js animation in hero
+var typed = new Typed(".typed-roles", {
+  strings: [
+    "Senior Site Reliability Engineer",
+    "Cloud Infrastructure Architect",
+    "Open Source Contributor",
+    "Conference Speaker",
+    "Kubernetes Expert",
+    "Red Hat Engineer"
+  ],
+  typeSpeed: 80,
+  backSpeed: 50,
+  backDelay: 2000,
   loop: true
-})
+});
 
-// modern slide up script 
+// Scroll-up button + header shrink
+const scrollUpBtn = document.getElementById("ToTop");
+const header = document.querySelector("header");
 
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.classList.add('show');
-  } else {
-    mybutton.classList.remove('show');
-  }
-}
+window.addEventListener("scroll", () => {
+  const scrolled = window.scrollY > 20;
+  scrollUpBtn.classList.toggle("show", scrolled);
+  header.classList.toggle("header--scrolled", window.scrollY > 50);
+});
+
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+// Scroll-reveal animations
+const revealElements = document.querySelectorAll(
+  '.service, .speaking__card, .opensource__card, .portfolio_wrap, .stat'
+);
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('revealed');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.15,
+  rootMargin: '0px 0px -50px 0px'
+});
+
+revealElements.forEach(el => {
+  el.classList.add('reveal');
+  revealObserver.observe(el);
+});
+
+// Active nav link highlighting
+const sections = document.querySelectorAll('section[id]');
+
+const navObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const navLink = document.querySelector(`.nav__link[href="#${entry.target.id}"]`);
+    if (navLink && entry.isIntersecting) {
+      document.querySelectorAll('.nav__link').forEach(l => l.classList.remove('nav__link--active'));
+      navLink.classList.add('nav__link--active');
+    }
+  });
+}, {
+  threshold: 0.3,
+  rootMargin: '-80px 0px 0px 0px'
+});
+
+sections.forEach(section => navObserver.observe(section));
