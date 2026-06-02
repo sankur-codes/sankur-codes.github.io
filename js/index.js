@@ -44,7 +44,7 @@ function topFunction() {
 
 // Scroll-reveal animations
 const revealElements = document.querySelectorAll(
-  '.service, .speaking__card, .opensource__card, .portfolio_wrap, .stat'
+  '.service, .skills__category, .cert__card, .speaking__card, .opensource__card, .stat'
 );
 
 const revealObserver = new IntersectionObserver((entries) => {

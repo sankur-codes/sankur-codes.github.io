@@ -31,9 +31,9 @@
           <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
           <li class="nav__item"><a href="#services" class="nav__link">What I Do</a></li>
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#speaking" class="nav__link">Speaking</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#speaking" class="nav__link">Community</a></li>
           <li class="nav__item"><a href="#opensource" class="nav__link">Open Source</a></li>
-          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
@@ -58,7 +58,7 @@
           and community advocate.
         </p>
         <div class="intro__cta">
-          <a href="#work" class="btn">View My Work</a>
+          <a href="#opensource" class="btn">View My Work</a>
           <a href="Ankur_Profile.pdf" download="Ankur_Singh_Resume" class="btn btn--outline">Download Resume</a>
         </div>
         <img src="img/myphoto.jpeg" alt="Ankur Singh" class="intro__img">
@@ -126,50 +126,186 @@
 
       <div class="about-me__stats">
         <div class="stat">
-          <span class="stat__number">5+</span>
+          <span class="stat__number">7+</span>
           <span class="stat__label">Years Experience</span>
         </div>
         <div class="stat">
-          <span class="stat__number">10+</span>
+          <span class="stat__number">4+</span>
           <span class="stat__label">Conference Talks</span>
         </div>
         <div class="stat">
-          <span class="stat__number">5+</span>
-          <span class="stat__label">OSS Projects</span>
+          <span class="stat__number">10s</span>
+          <span class="stat__label">University Lectures</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">3+</span>
+          <span class="stat__label">Hackathon Wins</span>
         </div>
       </div>
 
-      <img src="img/about.jpg" alt="Ankur Singh" class="about-me__img">
       <a href="Ankur_Profile.pdf" download="Ankur_Singh_Resume" class="btn about-me__CV">Download CV</a>
     </section>
 
-    <!-- Speaking & Conferences -->
+    <!-- Skills & Technologies -->
+    <section class="skills" id="skills">
+      <h2 class="section__title section__title--skills">Skills & Technologies</h2>
+      <p class="section__subtitle section__subtitle--skills">
+        Tools and technologies I work with every day
+      </p>
+      <div class="skills__grid">
+        <div class="skills__category">
+          <h3 class="skills__category-title"><i class="fa-solid fa-code"></i> Languages</h3>
+          <div class="skills__tags">
+            <span class="skills__pill">Python</span>
+            <span class="skills__pill">Go</span>
+            <span class="skills__pill">Java</span>
+            <span class="skills__pill">Groovy</span>
+            <span class="skills__pill">Bash</span>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3 class="skills__category-title"><i class="fa-solid fa-cubes"></i> Container & Orchestration</h3>
+          <div class="skills__tags">
+            <span class="skills__pill">Kubernetes</span>
+            <span class="skills__pill">OpenShift</span>
+            <span class="skills__pill">Docker</span>
+            <span class="skills__pill">Helm</span>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3 class="skills__category-title"><i class="fa-solid fa-cloud"></i> Cloud & Infrastructure</h3>
+          <div class="skills__tags">
+            <span class="skills__pill">Azure</span>
+            <span class="skills__pill">AWS</span>
+            <span class="skills__pill">Terraform</span>
+            <span class="skills__pill">Ansible</span>
+            <span class="skills__pill">Linux</span>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3 class="skills__category-title"><i class="fa-solid fa-arrows-spin"></i> CI/CD & DevOps</h3>
+          <div class="skills__tags">
+            <span class="skills__pill">Jenkins</span>
+            <span class="skills__pill">GitLab CI</span>
+            <span class="skills__pill">GoCD</span>
+            <span class="skills__pill">Git</span>
+            <span class="skills__pill">Nexus</span>
+            <span class="skills__pill">Flyway</span>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3 class="skills__category-title"><i class="fa-solid fa-chart-line"></i> Observability & Monitoring</h3>
+          <div class="skills__tags">
+            <span class="skills__pill">Prometheus</span>
+            <span class="skills__pill">OpenTelemetry</span>
+            <span class="skills__pill">Grafana</span>
+            <span class="skills__pill">Consul</span>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3 class="skills__category-title"><i class="fa-solid fa-robot"></i> AI & Productivity</h3>
+          <div class="skills__tags">
+            <span class="skills__pill">AI Agents</span>
+            <span class="skills__pill">LLM-assisted Development</span>
+            <span class="skills__pill">Workflow Automation</span>
+            <span class="skills__pill">AI Code Review</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="certifications" id="certifications">
+      <h2 class="section__title section__title--certifications">Certifications</h2>
+      <p class="section__subtitle section__subtitle--certifications">
+        Industry-recognized credentials validating my expertise
+      </p>
+      <div class="certifications__grid">
+        <div class="cert__card">
+          <div class="cert__badge">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="cert__body">
+            <h3>Certified Kubernetes Administrator (CKA)</h3>
+            <p class="cert__issuer">Linux Foundation · Dec 2023</p>
+            <div class="cert__skills">
+              <span class="cert__skill">Kubernetes</span>
+              <span class="cert__skill">Orchestration</span>
+              <span class="cert__skill">Helm</span>
+              <span class="cert__skill">Ingress</span>
+              <span class="cert__skill">Security Policies</span>
+              <span class="cert__skill">Scheduling</span>
+              <span class="cert__skill">Volumes</span>
+              <span class="cert__skill">CRDs</span>
+              <span class="cert__skill">Logging & Troubleshooting</span>
+              <span class="cert__skill">Services</span>
+            </div>
+            <div class="cert__links">
+              <a href="https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/" target="_blank" rel="noopener noreferrer" class="cert__link">Official Page <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://www.credly.com/badges/a8ccc4c3-2c69-46c6-b427-83056262ed47" target="_blank" rel="noopener noreferrer" class="cert__link">Credly Badge <i class="fa-solid fa-certificate"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert__card">
+          <div class="cert__badge">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="cert__body">
+            <h3>Red Hat Certified Developer in AI (EX267)</h3>
+            <p class="cert__issuer">Red Hat · Feb 2026</p>
+            <div class="cert__skills">
+              <span class="cert__skill">AI/ML</span>
+              <span class="cert__skill">AI/ML Workloads</span>
+              <span class="cert__skill">OpenShift AI</span>
+              <span class="cert__skill">OpenShift Administration</span>
+              <span class="cert__skill">Custom Notebook Images</span>
+              <span class="cert__skill">Model Serving</span>                                                
+              <span class="cert__skill">Data Pipelines</span>
+            </div>
+            <div class="cert__links">
+              <a href="https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai" target="_blank" rel="noopener noreferrer" class="cert__link">Official Page <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://www.credly.com/badges/b72a934e-e323-4063-b77b-7e0f8dff64d2" target="_blank" rel="noopener noreferrer" class="cert__link">Credly Badge <i class="fa-solid fa-certificate"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Knowledge Sharing -->
     <section class="speaking" id="speaking">
-      <h2 class="section__title section__title--speaking">Speaking & Conferences</h2>
+      <h2 class="section__title section__title--speaking">Knowledge & Community</h2>
       <p class="section__subtitle section__subtitle--speaking">
-        Sharing knowledge at premier cloud-native and open source events
+        Sharing ideas, building connections, and growing through conferences, classrooms, and writing
       </p>
       <div class="speaking__grid">
         <div class="speaking__card">
           <div class="speaking__icon">
             <i class="fa-solid fa-microphone-lines"></i>
           </div>
-          <h3>KubeCon + CloudNativeCon</h3>
+          <h3><a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/" target="_blank" rel="noopener noreferrer" class="speaking__title-link">KubeCon + CloudNativeCon EU 2025</a></h3>
           <p class="speaking__org">CNCF</p>
-          <p class="speaking__desc">Presenting on Kubernetes reliability patterns, SRE practices, and cloud-native infrastructure at the flagship CNCF conference.</p>
+          <p class="speaking__desc">Connecting with the global cloud-native community and sharing learnings on Kubernetes reliability and SRE practices at the flagship CNCF conference.</p>
           <div class="speaking__tags">
             <span class="speaking__tag">Kubernetes</span>
             <span class="speaking__tag">Cloud Native</span>
           </div>
+          <a href="https://www.linkedin.com/posts/as786_kubecon-kubernetes-finops-activity-7448376877377015808-VivV" target="_blank" rel="noopener noreferrer" class="speaking__link">View Talk Details <i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
         <div class="speaking__card">
           <div class="speaking__icon">
             <i class="fa-solid fa-microphone-lines"></i>
           </div>
-          <h3>Open Source Summit</h3>
+          <h3><a href="https://events.linuxfoundation.org/open-source-summit-north-america/" target="_blank" rel="noopener noreferrer" class="speaking__title-link">Open Source Summit NA 2026</a></h3>
           <p class="speaking__org">Linux Foundation</p>
-          <p class="speaking__desc">Speaking about open source contributions, community building, and enterprise adoption of open source technologies.</p>
+          <p class="speaking__desc">Exchanging ideas on open source culture, community-driven development, and the real-world impact of collaborative engineering.</p>
           <div class="speaking__tags">
             <span class="speaking__tag">Open Source</span>
             <span class="speaking__tag">Linux</span>
@@ -180,26 +316,55 @@
           <div class="speaking__icon">
             <i class="fa-solid fa-microphone-lines"></i>
           </div>
-          <h3>DevConf</h3>
+          <h3><a href="https://pretalx.devconf.info/devconf-us-2025/schedule/" target="_blank" rel="noopener noreferrer" class="speaking__title-link">DevConf US 2025</a></h3>
           <p class="speaking__org">Red Hat / Fedora Community</p>
-          <p class="speaking__desc">Delivering talks on DevOps practices, container platforms, and site reliability engineering at the Red Hat community conference.</p>
+          <p class="speaking__desc">Engaging with the Red Hat community through talks on DevOps, containers, and reliability engineering — learning as much as sharing.</p>
           <div class="speaking__tags">
             <span class="speaking__tag">DevOps</span>
             <span class="speaking__tag">Containers</span>
           </div>
+          <a href="https://www.linkedin.com/posts/as786_devconfus-kubernetes-opensource-activity-7383154491547791360-mJy9" target="_blank" rel="noopener noreferrer" class="speaking__link">View Talk Details <i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
         <div class="speaking__card">
           <div class="speaking__icon">
             <i class="fa-solid fa-microphone-lines"></i>
           </div>
-          <h3>Kubernetes Community Days</h3>
+          <h3><a href="https://community2.cncf.io/events/details/cncf-kcd-kuala-lumpur-2026-presents-kcd-kuala-lumpur-2026/" target="_blank" rel="noopener noreferrer" class="speaking__title-link">KCD Kuala Lumpur 2026</a></h3>
           <p class="speaking__org">CNCF Community</p>
-          <p class="speaking__desc">Engaging with regional Kubernetes communities through workshops and technical talks on cluster operations and observability.</p>
+          <p class="speaking__desc">Building relationships with regional Kubernetes communities through hands-on workshops and collaborative technical discussions.</p>
           <div class="speaking__tags">
             <span class="speaking__tag">KCD</span>
             <span class="speaking__tag">Community</span>
           </div>
+        </div>
+
+        <div class="speaking__card">
+          <div class="speaking__icon">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <h3><a href="https://drive.google.com/drive/folders/14L33YVkBbQNQ9qMCBa3vPN0wtc6tFJMC?usp=sharing" target="_blank" rel="noopener noreferrer" class="speaking__title-link">Teaching & University Lectures</a></h3>
+          <p class="speaking__org">Universities & Institutions</p>
+          <p class="speaking__desc">Guest lecturing at universities on cloud computing, DevOps, and open source — mentoring the next generation of engineers and sparking curiosity.</p>
+          <div class="speaking__tags">
+            <span class="speaking__tag">Teaching</span>
+            <span class="speaking__tag">Mentorship</span>
+          </div>
+          <a href="https://drive.google.com/drive/folders/14L33YVkBbQNQ9qMCBa3vPN0wtc6tFJMC?usp=sharing" target="_blank" rel="noopener noreferrer" class="speaking__link">View Sessions <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="speaking__card">
+          <div class="speaking__icon">
+            <i class="fa-solid fa-pen-nib"></i>
+          </div>
+          <h3><a href="https://alloftech.github.io/" target="_blank" rel="noopener noreferrer" class="speaking__title-link">Technical Blogging</a></h3>
+          <p class="speaking__org">alloftech.github.io</p>
+          <p class="speaking__desc">Writing in-depth articles on cloud infrastructure, Kubernetes, and SRE — turning hands-on experience into resources others can learn from.</p>
+          <div class="speaking__tags">
+            <span class="speaking__tag">Blogging</span>
+            <span class="speaking__tag">Writing</span>
+          </div>
+          <a href="https://alloftech.github.io/" target="_blank" rel="noopener noreferrer" class="speaking__link">Visit Blog <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </section>
@@ -228,9 +393,21 @@
             <i class="fa-brands fa-github"></i>
             <span class="opensource__language">Go</span>
           </div>
-          <h3>customDNS</h3>
-          <p>A custom DNS server implementation for learning and experimentation with DNS protocol internals and network programming fundamentals.</p>
-          <a href="https://github.com/sankur-codes/customDNS" target="_blank" rel="noopener noreferrer" class="opensource__link">
+          <h3>custom-dns-kubernetes</h3>
+          <p>A custom DNS implementation designed for Kubernetes environments, enabling flexible DNS resolution and service discovery within clusters.</p>
+          <a href="https://github.com/sankur-codes/custom-dns-kubernetes" target="_blank" rel="noopener noreferrer" class="opensource__link">
+            View on GitHub <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="opensource__card">
+          <div class="opensource__card-header">
+            <i class="fa-brands fa-github"></i>
+            <span class="opensource__language">Go / Python</span>
+          </div>
+          <h3>Augur</h3>
+          <p>Kubernetes-native FinOps forecasting platform. Collects operational metrics, serves ML forecasting models, and generates actionable infrastructure recommendations as custom resources.</p>
+          <a href="https://github.com/sankur-codes/augur" target="_blank" rel="noopener noreferrer" class="opensource__link">
             View on GitHub <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
@@ -249,53 +426,9 @@
       </div>
     </section>
 
-    <!-- Projects -->
-    <section class="my-work" id="work">
-      <h2 class="section__title section__title--work">Projects</h2>
-      <p class="section__subtitle section__subtitle--work">A collection of projects and contributions</p>
-      <div class="portfolio">
-        <div class="portfolio_wrap">
-          <a href="https://alloftech.github.io/" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-            <img src="img/blog.png" alt="Personal blog" class="portfolio__img">
-            <h3 class="portfolio__desc">Personal Blogging Website</h3>
-          </a>
-        </div>
-
-        <div class="portfolio_wrap">
-          <a href="https://github.com/sankur-codes/k8s-basic-project/" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-            <img src="img/k8s.png" alt="Kubernetes setup" class="portfolio__img">
-            <h3 class="portfolio__desc">Local K8s Setup Tutorial</h3>
-          </a>
-        </div>
-
-        <div class="portfolio_wrap">
-          <a href="https://github.com/sankur-codes/ARO-RP/" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-            <img src="img/aro.png" alt="ARO-RP" class="portfolio__img">
-            <h3 class="portfolio__desc">ARO-RP Contributor</h3>
-          </a>
-        </div>
-
-        <div class="portfolio_wrap">
-          <a href="https://drive.google.com/drive/folders/14L33YVkBbQNQ9qMCBa3vPN0wtc6tFJMC?usp=sharing" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-            <img src="img/teachingleadership.png" alt="Teaching sessions" class="portfolio__img">
-            <h3 class="portfolio__desc">Teaching & Leading</h3>
-          </a>
-        </div>
-
-        <div class="portfolio_wrap">
-          <a href="https://github.com/sankur-codes/customDNS" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-            <div class="portfolio__placeholder">
-              <i class="fa-solid fa-network-wired"></i>
-            </div>
-            <h3 class="portfolio__desc">Custom DNS Server</h3>
-          </a>
-        </div>
-      </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer" id="contact">
-      <a href="mailto:ankursingh1805@gmail.com" class="footer__link">ankursingh1805@gmail.com</a>
+      <a href="mailto:ankursingh1805@gmail.com" class="footer__link">Get In Touch</a>
       <ul class="social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="https://in.linkedin.com/in/as786" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
